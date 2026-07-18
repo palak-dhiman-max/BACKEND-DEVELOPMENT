@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Blogs</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <div class="head">
+    <h1>Welcome to <span>blognest </span> world of thoughts and stories</h1>
+    <h3>Discover stories that inspire and ideas that matter</h3>
+   
+</div>
+
+
+      
+
+        
+<div class="blog">
+
+    <% for(let blog of blogs){ %>
+
+
+
+    <div class="blog-content">
+     
+    <div class="i">
+    <img  src="<%= blog.userimg %>" alt="">
+    <span> @<%= blog.username %> </span>
+   
+    
+</div>
+
+    <img  src="<%= blog.image %>" alt="">
+
+
+    <div class="text">
+    <h3><%= blog.title %></h3>
+    <p><%= blog.content %></p>
+
+    </div>
+
+    <div class="link">
+    <a href="blogs/<%= blog.id %>">See in detail</a>
+    <a href="blogs/<%= blog.id %>/edit">Edit</a>
+
+    <form method="post" action="/blogs/<%= blog.id %>?_method=DELETE">
+        <button type="submit">Delete</button>
+    </form>
+
+    </div>
+
+
+
+    </div>
+
+
+
+
+
+   <%  } %>
+
+
+   </div>
+   
+   <a href="/blogs/new" class="create">Create post</a>
+
+
+
+</body>
+</html>
