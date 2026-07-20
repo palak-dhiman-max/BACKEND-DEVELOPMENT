@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Blog</title>
+    <link rel="stylesheet" href="/style2.css">
+</head>
+<body>
+
+
+    <h1>Here is your Blog</h1>
+
+    <div class="blog">
+     <div class="blog-content">
+     
+    <div class="i">
+    <img  src="<%= blog.userimg %>" alt="">
+
+    <div class="id">
+    <span class="s"> @<%= blog.username %> </span>
+    
+    <span > @<%= blog.id %> </span>
+    </div>
+
+</div>
+
+    <img  src="<%= blog.image %>" alt="">
+
+
+    <div class="text">
+    <h3><%= blog.title %></h3>
+    <p><%= blog.content %></p>
+
+    </div>
+
+    <div class="link">
+    
+    <a href="<%= blog.id %>/edit">Edit</a>
+
+    <form   method="post" action="">
+        <button type="submit">Delete</button>
+    </form>
+
+    </div>
+
+
+
+    </div>
+
+    </div>
+
+</body>
+</html>
