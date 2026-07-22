@@ -1,0 +1,58 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+ }
+body{
+    background: linear-gradient(45deg,aqua ,black);
+}
+ .card{
+      display: flex;
+    justify-content: center;
+
+    height: 100vh;
+ }
+
+ h1{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+   
+ }
+ .post{
+    height:25rem ;
+    width: 24rem;
+
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 4rem;
+    border: 2px solid black;
+    box-shadow: 0px 0px 20px 10px white;
+    
+ 
+ }
+
+ .post form{
+    
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+ }
+
+ .post form input{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+ }
+
+textarea ,button{
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+textarea{
+    padding: 1rem;
+}
