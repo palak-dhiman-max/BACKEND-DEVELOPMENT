@@ -1,0 +1,46 @@
+   <%- include("includes/head.ejs"); %>
+
+
+<body>
+
+    <div class="insta">
+    <h2>This page belongs to @ <%= instadata.username %></h2>
+    <button>Follow</button> &nbsp; &nbsp; &nbsp; &nbsp;
+    <button>Message</button>
+    <h2>Followers :<%= instadata.followers %></h2>
+    <h2>Following :<%= instadata.following %></h2>
+
+    <h2>My Posts</h2>
+     
+        <div class="post">
+       <% for(let p of instadata.posts){ %>
+          
+        <div class="content">
+           <img src= <%= p.image %> alt="">
+           <h2> Likes :<%= p.likes %></h2>
+            <h2>Comments :<%= p.comments %></h2>
+    </div>
+
+       <% } %>    
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
