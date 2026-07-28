@@ -1,0 +1,53 @@
+{
+    "cats":{
+
+        "username":"cats",
+        "followers":2500,
+        "following":5,
+        "posts":[
+            {
+                "image":"https://static.vecteezy.com/system/resources/thumbnails/050/393/628/small/cute-curious-gray-and-white-kitten-in-a-long-shot-photo.jpg",
+                "likes":312,
+                "comments":17
+            },
+
+               {
+                "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_2hKqvffnzGpgiYy6NCc0k13dpECd_LmkahWoh1ACGDjHHT8rDpOOUPk&s",
+                "likes":202,
+                "comments":16
+            },
+
+               {
+                "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJFDbK6WlW1T4ipnDi77LyMLecKYcOKq4qDhvNs8_oIWCs8QjYKZcJf-w&s",
+                "likes":892,
+                "comments":40
+            }
+        ]
+    },
+
+        "dogs":{
+
+        "username":"dogs",
+        "followers":4500,
+        "following":8,
+        "posts":[
+            {
+                "image":"https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;0,0.190xh",
+                "likes":102,
+                "comments":10
+            },
+
+               {
+                "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQLkPJV1TFT2zd9Tp6NCWkxkLZ4bKowvZCriefL1raZ25dgO-dlKnyuNg&s",
+                "likes":262,
+                "comments":19
+            },
+
+               {
+                "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgcH9fNi0k32KSuwBPmq-JkO5xd3s3aKCbe9ZZcLmyQ&s",
+                "likes":792,
+                "comments":90
+            }
+        ]
+    }
+}
