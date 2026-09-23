@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h1>Manage your Chats</h1>
+  <div class="box">
+
+ <% for(let chat of chats){ %>
+
+   
+    <div class="chat">
+        <p>From : <%= chat.from %></p>
+
+        <div class="msg">
+         <p ><%= chat.msg %> </p>
+
+
+         <div class="buttons">
+           <form method="get" action="/chats/<%= chat._id %>"><button class="btn1" type="submit">Edit</button></form>
+    
+
+           <form method="post" action="/chats/<%=chat._id%>?_method=DELETE" onsubmit=" return deleteChat()"><button  class="btn1" type="submit">Delete</button></form>
+           
+</div>
+           </div>
+
+          <p>to : <%= chat.to %></p>
+        <hr>
+        <h4 > created at : <%=chat.received.toString().split(" ")[4]%></h4>
+                <h4>created at : <%=chat.received.toString().split(" ").slice(0,4).join(" ")%></h4>
+    </div>
+
+    
+  
+<% }%>
+
+
+
+<form method="get" action="/chats/new">
+    <button class="btn" type="submit">Add chat</button>
+</form>
+
+</div>
+
+<script>
+    function deleteChat(){
+
+        let ans = confirm("Are you sure ?");
+
+        if(ans){
+            alert("Deleted Successfully");
+            return true;
+        }
+
+        return false;
+
+    }
+</script>
+</body>
+</html>
